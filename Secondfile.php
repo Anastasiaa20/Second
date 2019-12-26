@@ -23,7 +23,28 @@
     $arr = array(5 => 43, 6 => 32, 7 => 56, "b" => 12);
     print_r($arr);
     echo "</pre>";
+
+    echo "<br>";
+    echo "<pre>";
+    $arr = array(5 => 1, 12 => 2);
+    print_r($arr);
+    echo "</pre>";
+
+    echo "<pre>";
+    $arr[] = 56;
+    print_r($arr);
+    echo "</pre>";
+
+    echo "<pre>";
+    $arr["x"] = 42;
+    print_r($arr);
+    echo "</pre>";
+    
+    unset($arr[5]);
+    unset($arr);
     ?>
+
+
 </body>
 
 </html>
