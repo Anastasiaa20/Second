@@ -39,8 +39,12 @@
     $arr["x"] = 42;
     print_r($arr);
     echo "</pre>";
-    
+
+    echo "<pre>";
     unset($arr[5]);
+    print_r($arr);
+    echo "</pre>";
+    
     unset($arr);
     ?>
 
