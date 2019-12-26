@@ -70,6 +70,16 @@
     $b = 4;
     if ($a > $b)
         echo "a больше, чем b";
+
+    echo "<br>";
+
+    $a = 5;
+    $b = 4;
+    if ($a > $b) {
+        echo "a is greater than b";
+    } else {
+        echo "a is NOT greater than b";
+    }
     ?>
 
 
