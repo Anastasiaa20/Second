@@ -25,7 +25,7 @@
     echo "</pre>";
 
     echo "<br>";
-    
+
     echo "<pre>";
     $arr = array(5 => 1, 12 => 2);
     print_r($arr);
@@ -50,6 +50,19 @@
     unset($arr);
     print_r($arr);
     echo "</pre>";
+
+    echo "<br>";
+
+    class foo
+    {
+        function do_foo()
+        {
+            echo "Doing foo.";
+        }
+    }
+
+    $bar = new foo;
+    $bar->do_foo();
     ?>
 
 
