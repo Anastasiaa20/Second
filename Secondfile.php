@@ -15,6 +15,10 @@
     echo $arr["somearray"][6];  //5
     echo $arr["somearray"][13];  //9
     echo $arr["somearray"]["a"];  //42
+
+    array(5 => 43, 32, 56, "b" => 12);
+    array(5 => 43, 6 => 32, 7 => 56, "b" => 12);
+    echo "567";
     ?>
 </body>
 
