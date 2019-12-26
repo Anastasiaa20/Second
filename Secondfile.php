@@ -95,7 +95,7 @@
 
     echo "<br>";
 
-    $a == 6;
+    $a == 5;
     if ($a == 5):
         echo "a equals 5";
         echo "...";
