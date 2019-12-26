@@ -44,8 +44,11 @@
     unset($arr[5]);
     print_r($arr);
     echo "</pre>";
-    
+
+    echo "<pre>";
     unset($arr);
+    print_r($arr);
+    echo "</pre>";
     ?>
 
 
