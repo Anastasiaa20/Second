@@ -80,6 +80,18 @@
     } else {
         echo "a is NOT greater than b";
     }
+
+    echo "<br>";
+
+    $a = 5;
+    $b = 5;
+    if ($a > $b) {
+        echo "a is bigger than b";
+    } elseif ($a == $b) {
+        echo "a is equal to b";
+    } else {
+        echo "is a smaller than b";
+    }
     ?>
 
 
