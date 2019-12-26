@@ -63,6 +63,13 @@
 
     $bar = new foo;
     $bar->do_foo();
+
+    echo "<br>";
+
+    if ($a > $b)
+        echo "a больше, чем b";
+        $a = 5;
+        $b = 6;
     ?>
 
 
