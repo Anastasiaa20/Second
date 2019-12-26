@@ -18,10 +18,11 @@
 
     ?>
     <?php
+    echo "<pre>";
     array(5 => 43, 32, 56, "b" => 12);
     $arr = array(5 => 43, 6 => 32, 7 => 56, "b" => 12);
     print_r($arr);
-
+    echo "</pre>";
     ?>
 </body>
 
