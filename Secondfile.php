@@ -74,7 +74,7 @@
     echo "<br>";
 
     $a = 5;
-    $b = 4;
+    $b = 6;
     if ($a > $b) {
         echo "a is greater than b";
     } else {
