@@ -157,6 +157,37 @@
     echo $s;
     ?>
 
+    <br>
+
+    <?php
+
+    $p = 1;
+    $i = 3;
+    do {
+        $p = $p * ($i * $i);
+        $i++;
+    } while ($i <= 12);
+    // echo "$p";
+    $format = '%s';
+    echo sprintf("%01.0f", $p);
+    ?>
+
+    <br>
+
+    <?php
+    $i = 1;
+    switch ($i){
+        case 4:
+            echo 4;
+        break;
+        case 5:
+            echo 5;
+        break;
+        default:
+            echo "\$i=$i";
+    }
+    ?>
+
 </body>
 
 </html>
