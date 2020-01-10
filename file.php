@@ -65,10 +65,10 @@
 
     <br>
 
-    <?php 
-
+    <?php
+    // $s = 0;
     // $i = 1;
-    // for ($s = $s.$i; $i <= 10; ) {
+    // for ($s = $s + $i; $i <= 10; $i++ ) {
     //     echo $s;
     // }
     ?>
@@ -91,6 +91,70 @@
     foreach ($arr as $key => $value) {
         echo "Key: $key; Value : $value<br>\n";
     }
+    ?>
+
+    <br>
+
+    <?php
+    $s = 0;
+    $arr = array(10, 15, 20, 25);
+
+    foreach ($arr as $value) {
+        $s = $s + $value;
+    }
+    echo $s;
+    ?>
+
+    <br>
+
+    <?php
+    $i = 1;
+    while ($i <= 10) {
+        echo $i++;
+    }
+    ?>
+
+    <br>
+
+    <?php
+    $i = 1;
+    while ($i <= 10) :
+        echo $i;
+        $i++;
+    endwhile;
+    ?>
+
+    <br>
+
+    <?php
+    $s = 0;
+    $i = 1;
+    while ($i <= 10) {
+        $s = $s + $i;
+        $i++;
+    }
+    echo $s;
+    ?>
+
+    <br>
+
+    <?php
+    $i = 0;
+    do {
+        echo $i;
+    } while ($i > 0);
+    ?>
+
+    <br>
+
+    <?php
+    $s = 0;
+    $i = 1;
+    do {
+        $s = $s + $i;
+        $i++;
+    } while ($i <= 10);
+    echo $s;
     ?>
 
 </body>
