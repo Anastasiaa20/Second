@@ -9,26 +9,82 @@
 </head>
 
 <body>
-    <?php $a=5;?>
-    <?php if ($a == 5): ?>
+    <?php $a = 5; ?>
+    <?php if ($a == 5) : ?>
         A is equal to 5
     <?php endif; ?>
 
     <br>
 
-    <?php if ($a == 5){ ?> 
+    <?php if ($a == 5) { ?>
         A is equal to 5
     <?php }; ?>
 
     <br>
 
-    <?php 
+    <?php
 
     for ($i = 1; $i <= 10; $i++) {
         echo $i;
     }
     ?>
-    
+
+    <br>
+
+    <?php
+
+    for ($i = 1; $i <= 10; $i++) {
+        echo "$i <br>";
+    }
+    ?>
+
+    <br>
+
+    <?php
+
+    for ($i = 1;; $i++) {
+        if ($i > 10) {
+            break;
+        }
+        echo $i;
+    }
+    ?>
+
+    <br>
+
+    <?php
+    $i = 1;
+    for (;;) {
+        if ($i > 10) {
+            break;
+        }
+        echo $i;
+        $i++;
+    }
+    ?>
+
+    <br>
+
+    <?php 
+
+    // $i = 1;
+    // for ($s = $s.$i; $i <= 10; ) {
+    //     echo $s;
+    // }
+    ?>
+
+    <br>
+
+    <?php
+    $arr = array("one", "two", "three");
+
+    foreach ($arr as $value) {
+        echo "Value : $value<br>\n";
+    }
+    ?>
+
+    <br>
+
 </body>
 
 </html>
