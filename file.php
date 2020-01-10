@@ -9,9 +9,18 @@
 </head>
 
 <body>
-    <?php if ($a == 5) : ?>
+    <?php $a=4;?>
+    <?php if ($a == 5): ?>
         A is equal to 5
     <?php endif; ?>
+
+    <br>
+
+    <?php if ($a == 5){ ?> 
+        A is equal to 5
+    <?php }; ?>
+
+    <br>
 
 
 </body>
