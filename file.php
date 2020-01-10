@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <?php $a=4;?>
+    <?php $a=5;?>
     <?php if ($a == 5): ?>
         A is equal to 5
     <?php endif; ?>
@@ -22,7 +22,13 @@
 
     <br>
 
+    <?php 
 
+    for ($i = 1; $i <= 10; $i++) {
+        echo $i;
+    }
+    ?>
+    
 </body>
 
 </html>
