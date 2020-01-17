@@ -1,0 +1,36 @@
+table {
+    border-collapse: collapse;
+}
+
+.black {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.white {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+table tr td {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.rotate td {
+    transform: rotate(180deg);
+}
+
+tr td:last-child {
+    transform: rotate(180deg);
+    padding: 2rem;
+}
+
+tr td:first-child {
+    padding: 2rem;
+}
