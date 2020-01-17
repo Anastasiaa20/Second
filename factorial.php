@@ -11,6 +11,31 @@
 <body>
 
     <?php
+
+    function factorial($n)
+    {
+        $f = 1;
+        for ($i = 1; $i <= $n; $i++) {
+            $f = $f * $i;
+        }
+        return $f;
+    }
+
+    echo factorial(0);
+    echo "<br>";
+    echo factorial(1);
+    echo "<br>";
+    echo factorial(2);
+    echo "<br>";
+    echo factorial(3);
+    echo "<br>";
+    echo factorial(4);
+    echo "<br>";
+    ?>
+
+    <br>
+
+    <?php
     function fk($n)
     {
         if ($n == 0) {
@@ -31,7 +56,6 @@
     echo fk(4);
     echo "<br>";
     ?>
-
 
 </body>
 

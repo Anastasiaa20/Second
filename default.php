@@ -20,6 +20,17 @@
     echo $str; 
     ?>
 
+    <br>
+
+    <?php
+    function makecoffee($type = "cappuchino")
+    {
+        return "Making a cup of $type. \n";
+    }
+    echo makecoffee();
+    echo makecoffee("espresso");
+    ?>
+
 </body>
 
 </html>
