@@ -11,25 +11,30 @@
 <body>
 
     <?php
-    function plus(&$string)
+    $a = 1; 
+
+    function Test()
     {
-        $string .= ' + Петя';
+        // echo $a; // unfinded
     }
-    $str = 'Ира';
-    plus($str);
-    echo $str; // по ссылке
+    
+    Test();
     ?>
 
     <br>
 
-    
     <?php
-    function makecoffee($type = "cappuchino")
+    $a = 1;
+    $b = 2;
+
+    function Sum()
     {
-        return "Making a cup of $type. \n";
+        global $a, $b;
+        $b = $a + $b;
     }
-    echo makecoffee();
-    echo makecoffee("espresso"); // по умолчанию
+
+    Sum();          // доступ к переменным массива
+    echo $b;
     ?>
 
 </body>
