@@ -9,21 +9,18 @@
 </head>
 
 <body>
-
     <?php
+    $fp = fopen("FILE.txt", "w+");
+    fwrite($fp, "Test");
+    fclose($fp);
 
-    function fib($n)
-    {
-        $f = [0, 1];
-        for ($i = 1; $i < $n; $i++) {
-            $f[] = $f[$i] + $f[$i - 1];
-        }
-        return $f;
+    $file = 'FILE.txt';
+    $newfile = 'COPY.txt';
+
+    if (!copy($file, $newfile)) {
+        echo "не удалось скопировать $file...\n";
     }
-    echo "<pre>";
-    print_r(fib(7));
     ?>
-
 </body>
 
 </html>

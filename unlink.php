@@ -9,21 +9,14 @@
 </head>
 
 <body>
-
     <?php
+    $fp = fopen("file1.txt", "w+");
+    fwrite($fp, "Test");
+    fclose($fp);
 
-    function fib($n)
-    {
-        $f = [0, 1];
-        for ($i = 1; $i < $n; $i++) {
-            $f[] = $f[$i] + $f[$i - 1];
-        }
-        return $f;
-    }
-    echo "<pre>";
-    print_r(fib(7));
+    unlink("file.txt");
+
     ?>
-
 </body>
 
 </html>

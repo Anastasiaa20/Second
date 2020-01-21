@@ -11,19 +11,13 @@
 <body>
 
     <?php
-
-    function fib($n)
-    {
-        $f = [0, 1];
-        for ($i = 1; $i < $n; $i++) {
-            $f[] = $f[$i] + $f[$i - 1];
-        }
-        return $f;
-    }
-    echo "<pre>";
-    print_r(fib(7));
+    if (is_file ('file1.txt')) {
+        echo "It's file";
+    } else {
+        echo "It's not file";
+    } 
     ?>
 
-</body>
+</body
 
 </html>
